@@ -2,14 +2,14 @@
 #include <unistd.h>
 
 /**
- * main - main function
+ * main - print "and that piece of art is useful" - Dora Korpar, 2015-10-19",
+ * follwed by a newline, to standard error.
  *
- * Return: always 0
+ * Return: 1 (Success)
  */
 
 int main(void)
 {
-	fputs("and that piece of art is useful\" - Dora Ko
-rpar, 2015-10-19\n", stdout);
-	return (0);
+	write(2, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
+	return (1);
 }
